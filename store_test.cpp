@@ -5,11 +5,12 @@
  * @date 19 Jan 2019
  */
 
+#include "Store.h"
+#include <cassert>
+#include <fstream>
 #include <iostream>
 #include <map>
 #include <sstream>
-#include <fstream>
-#include <cassert>
 
 using namespace std;
 
@@ -46,7 +47,8 @@ void testStoreFinal() {
 }
 
 void testAll() {
-  testStore1();
-  testStore2();
-  testStoreFinal();
+  Store store;
+  store.loadCustomers("data4customers.txt");
+  store.loadInventory("data4movies.txt");
+  store.processCommands("data4commands.txt");
 }

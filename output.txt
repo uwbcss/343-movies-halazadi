@@ -1,0 +1,473 @@
+Mon Jun  2 06:47:42 UTC 2025
+Linux LinuxMachine 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
+=====================================================
+1. If the section below is empty, the program compiles 
+   without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. If the section below is empty or has the expected output 
+    the program puns and produces correct output
+=====================================================
+Unknown movie type: Z, discarding line: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Unknown movie type: Z, discarding line: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+[Comedy] 10 | Nora Ephron | Sleepless in Seattle | 1993
+[Comedy] 10 | Woody Allen | Annie Hall | 1977
+[Comedy] 10 | Rob Reiner | When Harry Met Sally | 1989
+[Comedy] 10 | Gore Verbinski | Pirates of the Caribbean | 2003
+[Comedy] 10 | Different Years | Pirates of the Caribbean | 2000
+[Comedy] 10 | Joel Coen | Fargo | 1996
+[Comedy] 10 | John Landis | National Lampoon's Animal House | 1978
+[Comedy] 10 | Nora Ephron | You've Got Mail | 1998
+[Drama] 10 | Barry Levinson | Good Morning Vietnam | 1988
+[Drama] 10 | Barry Levinson | Same Director Good Morning Vietnam | 1988
+[Drama] 10 | Gus Van Sant | Good Will Hunting | 2000
+[Drama] 10 | Phillippe De Broca | King of Hearts | 1967
+[Drama] 10 | Steven Spielberg | Schindler's List | 1993
+[Drama] 10 | Jonathan Demme | Silence of the Lambs | 1991
+[Drama] 10 | Clint Eastwood | Unforgiven | 1992
+[Drama] 10 | Nancy Savoca | Dogfight | 1991
+[Classic] 10 | Michael Curtiz | Casablanca | Ingrid Bergman | 8/1942
+[Classic] 10 | Michael Curtiz | Casablanca | Humphrey Bogart | 8/1942
+[Classic] 10 | Victor Fleming | The Wizard of Oz | Judy Garland | 7/1939
+[Classic] 10 | Hal Ashby | Harold and Maude | Ruth Gordon | 3/1971
+[Classic] 10 | George Cukor | Holiday | Katherine Hepburn | 9/1938
+[Classic] 10 | George Cukor | Holiday | Cary Grant | 9/1938
+[Classic] 10 | Victor Fleming | Gone With the Wind | Vivien Leigh | 2/1939
+[Classic] 10 | Victor Fleming | Gone With the Wind | Clark Gable | 2/1939
+[Classic] 10 | George Cukor | The Philadelphia Story | Katherine Hepburn | 5/1940
+[Classic] 10 | George Cukor | The Philadelphia Story | Cary Grant | 5/1940
+[Classic] 10 | John Huston | The Maltese Falcon | Humphrey Bogart | 10/1941
+[Classic] 10 | Frank Capra | It's a Wonderful Life | James Steward | 11/1946
+[Classic] 10 | Frank Capra | It's a Wonderful Life | Donna Reed | 11/1946
+[Classic] 10 | Stanley Kubrick | A Clockwork Orange | Malcolm McDowell | 2/1971
+History for Minnie Mouse (ID: 1000):
+  No history for Minnie Mouse
+History for Freddie Frog (ID: 5000):
+  No history for Freddie Frog
+History for Wally Wacky (ID: 8000):
+  No history for Wally Wacky
+Invalid movie type: Z
+Invalid command: X
+Invalid command: Z
+Invalid customer ID: 1234
+Invalid movie or genre not found for key: Bogus Title|2001
+Unsupported media type: Z
+Movie out of stock: Harold and Maude
+Movie out of stock: Harold and Maude
+Movie out of stock: Harold and Maude
+Invalid movie or genre not found for key: Steven Spielberg|Bogus Title
+[Comedy] 9 | Nora Ephron | Sleepless in Seattle | 1993
+[Comedy] 9 | Woody Allen | Annie Hall | 1977
+[Comedy] 9 | Rob Reiner | When Harry Met Sally | 1989
+[Comedy] 10 | Gore Verbinski | Pirates of the Caribbean | 2003
+[Comedy] 10 | Different Years | Pirates of the Caribbean | 2000
+[Comedy] 9 | Joel Coen | Fargo | 1996
+[Comedy] 9 | John Landis | National Lampoon's Animal House | 1978
+[Comedy] 9 | Nora Ephron | You've Got Mail | 1998
+[Drama] 9 | Barry Levinson | Good Morning Vietnam | 1988
+[Drama] 10 | Barry Levinson | Same Director Good Morning Vietnam | 1988
+[Drama] 9 | Gus Van Sant | Good Will Hunting | 2000
+[Drama] 9 | Phillippe De Broca | King of Hearts | 1967
+[Drama] 9 | Steven Spielberg | Schindler's List | 1993
+[Drama] 9 | Jonathan Demme | Silence of the Lambs | 1991
+[Drama] 9 | Clint Eastwood | Unforgiven | 1992
+[Drama] 8 | Nancy Savoca | Dogfight | 1991
+[Classic] 10 | Michael Curtiz | Casablanca | Ingrid Bergman | 8/1942
+[Classic] 10 | Michael Curtiz | Casablanca | Humphrey Bogart | 8/1942
+[Classic] 10 | Victor Fleming | The Wizard of Oz | Judy Garland | 7/1939
+[Classic] 0 | Hal Ashby | Harold and Maude | Ruth Gordon | 3/1971
+[Classic] 10 | George Cukor | Holiday | Katherine Hepburn | 9/1938
+[Classic] 9 | George Cukor | Holiday | Cary Grant | 9/1938
+[Classic] 10 | Victor Fleming | Gone With the Wind | Vivien Leigh | 2/1939
+[Classic] 10 | Victor Fleming | Gone With the Wind | Clark Gable | 2/1939
+[Classic] 9 | George Cukor | The Philadelphia Story | Katherine Hepburn | 5/1940
+[Classic] 9 | George Cukor | The Philadelphia Story | Cary Grant | 5/1940
+[Classic] 9 | John Huston | The Maltese Falcon | Humphrey Bogart | 10/1941
+[Classic] 10 | Frank Capra | It's a Wonderful Life | James Steward | 11/1946
+[Classic] 10 | Frank Capra | It's a Wonderful Life | Donna Reed | 11/1946
+[Classic] 9 | Stanley Kubrick | A Clockwork Orange | Malcolm McDowell | 2/1971
+History for Minnie Mouse (ID: 1000):
+  Borrowed: Good Morning Vietnam
+  Borrowed: The Philadelphia Story
+  Borrowed: Good Will Hunting
+  Borrowed: The Philadelphia Story
+  Borrowed: Harold and Maude
+History for Mickey Mouse (ID: 1111):
+  Borrowed: A Clockwork Orange
+  Borrowed: Harold and Maude
+  Borrowed: The Maltese Falcon
+  Borrowed: Holiday
+History for Freddie Frog (ID: 5000):
+  Borrowed: Harold and Maude
+  Returned: Harold and Maude
+  Borrowed: Harold and Maude
+  Returned: Harold and Maude
+  Borrowed: Harold and Maude
+  Returned: Harold and Maude
+  Borrowed: Harold and Maude
+History for Wally Wacky (ID: 8000):
+  Borrowed: You've Got Mail
+  Returned: You've Got Mail
+  Borrowed: Harold and Maude
+  Borrowed: Harold and Maude
+  Borrowed: National Lampoon's Animal House
+History for Porky Pig (ID: 8888):
+  Borrowed: Annie Hall
+  Borrowed: When Harry Met Sally
+  Borrowed: Silence of the Lambs
+  Borrowed: Dogfight
+  Borrowed: Harold and Maude
+Done.
+=====================================================
+3. If the section below is empty, then there are no clang-tidy warnings 
+   (ignore warnings from system headers, such as "13554 warnings generated.")
+=====================================================
+[1/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/BorrowCommand.cpp.
+24121 warnings generated.
+[2/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Classic.cpp.
+37924 warnings generated.
+[3/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Comedy.cpp.
+51727 warnings generated.
+[4/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/CommandFactory.cpp.
+73456 warnings generated.
+[5/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Customer.cpp.
+88738 warnings generated.
+[6/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Drama.cpp.
+102541 warnings generated.
+[7/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HashTable.cpp.
+111026 warnings generated.
+[8/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HistoryCommand.cpp.
+132755 warnings generated.
+[9/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Inventory.cpp.
+150832 warnings generated.
+[10/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/InventoryCommand.cpp.
+174104 warnings generated.
+[11/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MediaType.cpp.
+184161 warnings generated.
+[12/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Movie.cpp.
+197964 warnings generated.
+[13/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp.
+215432 warnings generated.
+[14/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/ReturnCommand.cpp.
+239553 warnings generated.
+[15/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Store.cpp.
+263607 warnings generated.
+[16/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Transaction.cpp.
+273663 warnings generated.
+[17/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/main.cpp.
+287466 warnings generated.
+[18/18] Processing file /home/cssuwbstudent/halazadi/movies/343-movies-halazadi/store_test.cpp.
+308204 warnings generated.
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/BorrowCommand.cpp:20:3: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   20 |   char media, genre;
+      |   ^~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/BorrowCommand.cpp:28:8: error: implicit conversion 'Customer *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   28 |   if (!customer) {
+      |       ~^       
+      |                 == nullptr
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/BorrowCommand.cpp:48:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   48 |     int month, year;
+      |     ^~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/BorrowCommand.cpp:49:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   49 |     std::string first, last;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/BorrowCommand.cpp:59:8: error: implicit conversion 'Movie *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   59 |   if (!movie || movie->getGenre() != genre) {
+      |       ~^
+      |       (      == nullptr)
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Command.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <string>
+      | ^        ~~~~~~~~
+      |          <sstream>
+    5 | #include <unordered_map>
+      |          ~~~~~~~~~~~~~~~
+      |          <string>
+    6 | #include <sstream>
+      |          ~~~~~~~~~
+      |          <unordered_map>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/CommandFactory.h:5:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    5 | #include <unordered_map>
+      | ^        ~~~~~~~~~~~~~~~
+      |          <functional>
+    6 | #include <functional>
+      |          ~~~~~~~~~~~~
+      |          <unordered_map>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HashTable.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <vector>
+      | ^        ~~~~~~~~
+      |          <list>
+    5 | #include <list>
+      |          ~~~~~~
+      |          <utility>
+    6 | #include <utility>
+      |          ~~~~~~~~~
+      |          <vector>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HashTable.h:11:5: error: single-argument constructors must be marked explicit to avoid unintentional implicit conversions [google-explicit-constructor,-warnings-as-errors]
+   11 |     HashTable(int size = 1000);
+      |     ^
+      |     explicit 
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HashTable.h:24:11: error: suspicious #include of file with '.cpp' extension [bugprone-suspicious-include,-warnings-as-errors]
+   24 | #include "HashTable.cpp" // Needed for template implementation
+      |           ^
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HashTable.h:24:11: note: did you mean to include 'HashTable.h'?
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HistoryCommand.cpp:15:41: error: all parameters should be named in a function [readability-named-parameter,-warnings-as-errors]
+   15 |                              Inventory &) {
+      |                                         ^
+      |                                          /*inventory*/
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/HistoryCommand.cpp:20:8: error: implicit conversion 'Customer *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   20 |   if (!customer) {
+      |       ~^       
+      |                 == nullptr
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Inventory.cpp:22:80: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   22 |     if (line.empty() || line.find_first_not_of(" \t\r\n") == std::string::npos)
+      |                                                                                ^
+      |                                                                                 {
+   23 |       continue;
+      |                
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Inventory.cpp:26:9: error: implicit conversion 'Movie *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   26 |     if (movie) {
+      |         ^    
+      |               != nullptr
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Inventory.cpp:46:30: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   46 |       if (m->getKey() == key)
+      |                              ^
+      |                               {
+   47 |         return m;
+      |                  
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Inventory.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <string>
+      | ^        ~~~~~~~~
+      |          "Movie.h"
+    5 | #include <map>
+    6 | #include <vector>
+      |          ~~~~~~~~
+      |          <string>
+    7 | #include "Movie.h"
+      |          ~~~~~~~~~
+      |          <vector>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/InventoryCommand.cpp:14:52: error: all parameters should be named in a function [readability-named-parameter,-warnings-as-errors]
+   14 | void InventoryCommand::execute(std::istringstream &,
+      |                                                    ^
+      |                                                     /*ss*/
+   15 |                                std::unordered_map<int, Customer *> &,
+      |                                                                     
+      |                                                                      /*customers*/
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MediaType.h:8:5: error: single-argument constructors must be marked explicit to avoid unintentional implicit conversions [google-explicit-constructor,-warnings-as-errors]
+    8 |     MediaType(char code);
+      |     ^
+      |     explicit 
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Movie.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <string>
+      | ^        ~~~~~~~~
+      |          <iostream>
+    5 | #include <iostream>
+      |          ~~~~~~~~~~
+      |          <string>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:27:3: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   27 |   std::string director, title, actorFirst, actorLast;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:28:3: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   28 |   int year, month;
+      |   ^~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:34:33: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   34 |     if (!getline(ss, temp, ','))
+      |                                 ^
+      |                                  {
+   35 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:37:75: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   37 |     if (temp.empty() || !std::all_of(temp.begin(), temp.end(), ::isdigit))
+      |                                                                           ^
+      |                                                                            {
+   38 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:41:37: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   41 |     if (!getline(ss, director, ','))
+      |                                     ^
+      |                                      {
+   42 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:44:34: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   44 |     if (!getline(ss, title, ','))
+      |                                  ^
+      |                                   {
+   45 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:49:19: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   49 |     if (ss.fail())
+      |                   ^
+      |                    {
+   50 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:56:33: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   56 |     if (!getline(ss, temp, ','))
+      |                                 ^
+      |                                  {
+   57 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:59:75: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   59 |     if (temp.empty() || !std::all_of(temp.begin(), temp.end(), ::isdigit))
+      |                                                                           ^
+      |                                                                            {
+   60 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:63:37: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   63 |     if (!getline(ss, director, ','))
+      |                                     ^
+      |                                      {
+   64 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:66:34: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   66 |     if (!getline(ss, title, ','))
+      |                                  ^
+      |                                   {
+   67 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:71:19: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   71 |     if (ss.fail())
+      |                   ^
+      |                    {
+   72 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:78:33: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   78 |     if (!getline(ss, temp, ','))
+      |                                 ^
+      |                                  {
+   79 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:81:75: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   81 |     if (temp.empty() || !std::all_of(temp.begin(), temp.end(), ::isdigit))
+      |                                                                           ^
+      |                                                                            {
+   82 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:85:37: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   85 |     if (!getline(ss, director, ','))
+      |                                     ^
+      |                                      {
+   86 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:88:34: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   88 |     if (!getline(ss, title, ','))
+      |                                  ^
+      |                                   {
+   89 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:94:19: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   94 |     if (ss.fail())
+      |                   ^
+      |                    {
+   95 |       break;
+      |             
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/MovieFactory.cpp:102:10: error: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+  102 |     if (!isspace(type)) {
+      |         ~^            
+      |                        == 0
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/ReturnCommand.cpp:20:3: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   20 |   char media, genre;
+      |   ^~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/ReturnCommand.cpp:28:8: error: implicit conversion 'Customer *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   28 |   if (!customer) {
+      |       ~^       
+      |                 == nullptr
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/ReturnCommand.cpp:48:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   48 |     int month, year;
+      |     ^~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/ReturnCommand.cpp:49:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   49 |     std::string first, last;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/ReturnCommand.cpp:59:8: error: implicit conversion 'Movie *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   59 |   if (!movie || movie->getGenre() != genre) {
+      |       ~^
+      |       (      == nullptr)
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Store.cpp:24:3: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   24 |   std::string first, last;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Store.cpp:48:7: error: implicit conversion 'Command *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   48 |   if (command) {
+      |       ^      
+      |               != nullptr
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Store.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <string>
+      | ^        ~~~~~~~~
+      |          "Command.h"
+    5 | #include <unordered_map>
+      |          ~~~~~~~~~~~~~~~
+      |          "Customer.h"
+    6 | #include <vector>
+      |          ~~~~~~~~
+      |          "Inventory.h"
+    7 | #include "Customer.h"
+      |          ~~~~~~~~~~~~
+      |          <string>
+    8 | #include "Inventory.h"
+      |          ~~~~~~~~~~~~~
+      |          <unordered_map>
+    9 | #include "Command.h"
+      |          ~~~~~~~~~~~
+      |          <vector>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Utils.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <string>
+      | ^        ~~~~~~~~
+      |          <algorithm>
+    5 | #include <algorithm>
+      |          ~~~~~~~~~~~
+      |          <string>
+/home/cssuwbstudent/halazadi/movies/343-movies-halazadi/Utils.h:10:36: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   10 |     if (first == std::string::npos) return "";
+      |                                    ^          
+      |                                     {
+Suppressed 308109 warnings (308109 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+47 warnings treated as errors
+=====================================================
+4. If the section below is empty, clang-format does not find any formatting issues
+   You can fix formatting errors using "clang-format -i <filename>" on command line
+=====================================================
+Running clang-format on ./BorrowCommand.cpp
+Running clang-format on ./Classic.cpp
+Running clang-format on ./Comedy.cpp
+Running clang-format on ./CommandFactory.cpp
+Running clang-format on ./Customer.cpp
+Running clang-format on ./Drama.cpp
+Running clang-format on ./HashTable.cpp
+Running clang-format on ./HistoryCommand.cpp
+Running clang-format on ./Inventory.cpp
+Running clang-format on ./InventoryCommand.cpp
+Running clang-format on ./MediaType.cpp
+Running clang-format on ./Movie.cpp
+Running clang-format on ./MovieFactory.cpp
+Running clang-format on ./ReturnCommand.cpp
+Running clang-format on ./Store.cpp
+Running clang-format on ./Transaction.cpp
+Running clang-format on ./main.cpp
+Running clang-format on ./store_test.cpp
+=====================================================
+5. If there are any memory leaks, it should be in the output below
+=====================================================
+=====================================================
+6. Using valgrind to check for memory leaks
+   Check for "definitely lost" in the output below
+=====================================================
+==59599== Memcheck, a memory error detector
+==59599== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==59599== Using Valgrind-3.23.0 and LibVEX; rerun with -h for copyright info
+==59599== Command: ./a.out
+==59599== Parent PID: 58846
+==59599== 
+==59599== 
+==59599== HEAP SUMMARY:
+==59599==     in use at exit: 0 bytes in 0 blocks
+==59599==   total heap usage: 1,196 allocs, 1,196 frees, 145,828 bytes allocated
+==59599== 
+==59599== All heap blocks were freed -- no leaks are possible
+==59599== 
+==59599== For lists of detected and suppressed errors, rerun with: -s
+==59599== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Mon Jun  2 06:48:59 UTC 2025
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================
