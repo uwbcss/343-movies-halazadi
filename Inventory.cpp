@@ -19,11 +19,13 @@ void Inventory::loadFromFile(const std::string &filename) {
   std::string line;
 
   while (getline(file, line)) {
-    if (line.empty() || line.find_first_not_of(" \t\r\n") == std::string::npos)
+    if (line.empty() ||
+        line.find_first_not_of(" \t\r\n") == std::string::npos) {
       continue;
+    }
 
     Movie *movie = MovieFactory::createMovie(line);
-    if (movie) {
+    if (movie != nullptr) {
       addMovie(movie);
     }
   }
@@ -43,8 +45,9 @@ void Inventory::printInventory() const {
 Movie *Inventory::getMovie(const std::string &key) const {
   for (const auto &genrePair : moviesByGenre) {
     for (Movie *m : genrePair.second) {
-      if (m->getKey() == key)
+      if (m->getKey() == key) {
         return m;
+      }
     }
   }
   return nullptr;

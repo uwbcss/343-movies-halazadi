@@ -21,7 +21,8 @@ void Store::loadCustomers(const std::string &filename) {
   }
 
   int id;
-  std::string first, last;
+  std::string first;
+  std::string last;
   while (file >> id >> last >> first) {
     customers[id] = new Customer(id, first, last);
   }
@@ -45,7 +46,7 @@ void Store::processCommandLine(const std::string &line) {
   ss >> commandType;
 
   Command *command = CommandFactory::create(commandType);
-  if (command) {
+  if (command != nullptr) {
     command->execute(ss, customers, *inventory);
     delete command;
   } else {

@@ -5,7 +5,7 @@
 
 class MediaType {
 public:
-    MediaType(char code);
+    explicit MediaType(char code);  // Marked explicit to avoid implicit conversion
     char getCode() const;
     std::string getName() const;
 

@@ -17,15 +17,17 @@ void ReturnCommand::execute(std::istringstream &ss,
                             std::unordered_map<int, Customer *> &customers,
                             Inventory &inventory) {
   int id;
-  char media, genre;
+  char media;
+  char genre;
   ss >> id >> media >> genre;
+
   if (media != 'D') {
     std::cerr << "Unsupported media type: " << media << "\n";
     return;
   }
 
   Customer *customer = customers[id];
-  if (!customer) {
+  if (customer == nullptr) {
     std::cerr << "Invalid customer ID: " << id << "\n";
     return;
   }
@@ -34,19 +36,21 @@ void ReturnCommand::execute(std::istringstream &ss,
 
   if (genre == 'F') {
     std::string title;
-    int year;
-    getline(ss, title, ',');
+    int year = 0;
+    std::getline(ss, title, ',');
     ss >> year;
     movieKey = trim(title) + "|" + std::to_string(year);
   } else if (genre == 'D') {
     std::string director;
-    getline(ss, director, ',');
+    std::getline(ss, director, ',');
     std::string title;
-    getline(ss, title, ',');
+    std::getline(ss, title, ',');
     movieKey = trim(director) + "|" + trim(title);
   } else if (genre == 'C') {
-    int month, year;
-    std::string first, last;
+    int month = 0;
+    int year = 0;
+    std::string first;
+    std::string last;
     ss >> month >> year >> first >> last;
     movieKey = std::to_string(month) + "|" + std::to_string(year) + "|" +
                first + " " + last;
@@ -56,7 +60,7 @@ void ReturnCommand::execute(std::istringstream &ss,
   }
 
   Movie *movie = inventory.getMovie(movieKey);
-  if (!movie || movie->getGenre() != genre) {
+  if (movie == nullptr || movie->getGenre() != genre) {
     std::cerr << "Invalid movie or genre not found for key: " << movieKey
               << "\n";
     return;

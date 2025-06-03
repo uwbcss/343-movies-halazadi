@@ -1,14 +1,14 @@
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
 
-#include <vector>
 #include <list>
 #include <utility>
+#include <vector>
 
-template<typename KeyType, typename ValueType>
+template <typename KeyType, typename ValueType>
 class HashTable {
 public:
-    HashTable(int size = 1000);
+    explicit HashTable(int size = 1000);  // Fix: mark single-arg constructor explicit
     ~HashTable();
 
     void insert(const KeyType& key, const ValueType& value);
@@ -20,7 +20,5 @@ private:
     std::vector<std::list<std::pair<KeyType, ValueType>>> table;
     int capacity;
 };
-
-#include "HashTable.cpp" // Needed for template implementation
 
 #endif

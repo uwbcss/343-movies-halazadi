@@ -1,8 +1,8 @@
 #ifndef MOVIE_H
 #define MOVIE_H
 
-#include <string>
 #include <iostream>
+#include <string>
 
 class Movie {
 public:

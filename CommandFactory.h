@@ -2,8 +2,8 @@
 #define COMMANDFACTORY_H
 
 #include "Command.h"
-#include <unordered_map>
 #include <functional>
+#include <unordered_map>
 
 class CommandFactory {
 public:

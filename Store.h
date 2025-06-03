@@ -1,12 +1,12 @@
 #ifndef STORE_H
 #define STORE_H
 
+#include "Command.h"
+#include "Customer.h"
+#include "Inventory.h"
 #include <string>
 #include <unordered_map>
 #include <vector>
-#include "Customer.h"
-#include "Inventory.h"
-#include "Command.h"
 
 class Store {
 public:

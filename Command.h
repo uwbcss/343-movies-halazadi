@@ -1,9 +1,9 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
+#include <sstream>
 #include <string>
 #include <unordered_map>
-#include <sstream>
 
 class Customer;
 class Inventory;

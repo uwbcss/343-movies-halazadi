@@ -1,10 +1,10 @@
 #ifndef INVENTORY_H
 #define INVENTORY_H
 
-#include <string>
-#include <map>
-#include <vector>
 #include "Movie.h"
+#include <map>
+#include <string>
+#include <vector>
 
 class Inventory {
 public:
