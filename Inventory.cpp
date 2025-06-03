@@ -1,15 +1,20 @@
 #include "Inventory.h"
+#include "Classic.h"
+#include "Comedy.h"
+#include "Drama.h"
 #include "MovieFactory.h"
+#include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <vector>
 
 Inventory::Inventory() {}
 
 Inventory::~Inventory() {
   for (auto &genrePair : moviesByGenre) {
-    for (Movie *m : genrePair.second) {
-      delete m;
+    for (auto &moviePair : genrePair.second) {
+      delete moviePair.second;
     }
   }
 }
@@ -32,11 +37,47 @@ void Inventory::loadFromFile(const std::string &filename) {
 }
 
 void Inventory::printInventory() const {
-  for (const auto &genre : {"F", "D", "C"}) {
+  for (const char genre : {'F', 'D', 'C'}) {
     auto it = moviesByGenre.find(genre);
     if (it != moviesByGenre.end()) {
-      for (Movie *m : it->second) {
-        m->printInfo();
+      std::vector<Movie *> movies;
+      for (const auto &pair : it->second) {
+        movies.push_back(pair.second);
+      }
+
+      // Sort depending on genre
+      if (genre == 'F') {
+        std::sort(movies.begin(), movies.end(), [](Movie *a, Movie *b) {
+          return (a->getTitle() != b->getTitle())
+                     ? a->getTitle() < b->getTitle()
+                     : a->getYear() < b->getYear();
+        });
+      } else if (genre == 'D') {
+        std::sort(movies.begin(), movies.end(), [](Movie *a, Movie *b) {
+          return (a->getDirector() != b->getDirector())
+                     ? a->getDirector() < b->getDirector()
+                     : a->getTitle() < b->getTitle();
+        });
+      } else if (genre == 'C') {
+        std::sort(movies.begin(), movies.end(), [](Movie *a, Movie *b) {
+          Classic *ca = dynamic_cast<Classic *>(a);
+          Classic *cb = dynamic_cast<Classic *>(b);
+          if (ca != nullptr && cb != nullptr) {
+            if (ca->getYear() != cb->getYear()) {
+              return ca->getYear() < cb->getYear();
+            }
+            if (ca->getMonth() != cb->getMonth()) {
+              return ca->getMonth() < cb->getMonth();
+            }
+            return ca->getMajorActor() < cb->getMajorActor();
+          }
+          return false;
+        });
+      }
+
+      // Print all
+      for (const auto &movie : movies) {
+        movie->printInfo();
       }
     }
   }
@@ -44,9 +85,9 @@ void Inventory::printInventory() const {
 
 Movie *Inventory::getMovie(const std::string &key) const {
   for (const auto &genrePair : moviesByGenre) {
-    for (Movie *m : genrePair.second) {
-      if (m->getKey() == key) {
-        return m;
+    for (const auto &moviePair : genrePair.second) {
+      if (moviePair.first == key) {
+        return moviePair.second;
       }
     }
   }
@@ -54,6 +95,16 @@ Movie *Inventory::getMovie(const std::string &key) const {
 }
 
 void Inventory::addMovie(Movie *movie) {
-  std::string genre(1, movie->getGenre());
-  moviesByGenre[genre].push_back(movie);
+  moviesByGenre[movie->getGenre()][movie->getKey()] = movie;
+}
+
+std::vector<Movie *> Inventory::getAllMoviesOfGenre(char genre) const {
+  std::vector<Movie *> result;
+  auto it = moviesByGenre.find(genre);
+  if (it != moviesByGenre.end()) {
+    for (const auto &pair : it->second) {
+      result.push_back(pair.second);
+    }
+  }
+  return result;
 }

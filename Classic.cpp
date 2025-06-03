@@ -1,5 +1,8 @@
 #include "Classic.h"
+#include "Inventory.h"
+#include <algorithm>
 #include <iostream>
+#include <vector>
 
 Classic::Classic(int stock, const std::string &director,
                  const std::string &title, const std::string &majorActor,
@@ -14,6 +17,10 @@ std::string Classic::getKey() const {
 
 void Classic::printInfo() const {
   std::cout << "[Classic] " << stock << " | " << director << " | " << title
-            << " | " << majorActor << " | " << releaseMonth << "/" << year
+            << " | " << majorActor << " | " << releaseMonth << " " << year
             << "\n";
 }
+
+int Classic::getMonth() const { return releaseMonth; }
+
+std::string Classic::getMajorActor() const { return majorActor; }

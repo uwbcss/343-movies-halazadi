@@ -20,6 +20,7 @@ public:
 
     virtual std::string getKey() const = 0; // unique lookup key
     virtual void printInfo() const = 0;
+    
 
 protected:
     char genre;

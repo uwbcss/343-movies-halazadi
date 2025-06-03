@@ -19,8 +19,21 @@ void Customer::printHistory() const {
   if (history.empty()) {
     std::cout << "  No history for " << getName() << "\n";
   } else {
-    for (const std::string &t : history) {
-      std::cout << "  " << t << "\n";
+    for (const std::string &record : history) {
+      std::cout << "  " << record << "\n";
     }
   }
+}
+
+// New methods
+void Customer::addBorrowedMovie(const std::string &movieKey) {
+  borrowedMovies.insert(movieKey);
+}
+
+bool Customer::hasBorrowedMovie(const std::string &movieKey) const {
+  return borrowedMovies.find(movieKey) != borrowedMovies.end();
+}
+
+void Customer::removeBorrowedMovie(const std::string &movieKey) {
+  borrowedMovies.erase(movieKey);
 }

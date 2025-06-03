@@ -8,6 +8,9 @@
 
 class Inventory {
 public:
+
+std::vector<Movie*> getAllMoviesOfGenre(char genre) const;
+
     Inventory();
     ~Inventory();
 
@@ -17,8 +20,9 @@ public:
     Movie* getMovie(const std::string& key) const;
     void addMovie(Movie* movie);
 
+
 private:
-    std::map<std::string, std::vector<Movie*>> moviesByGenre;
+    std::map<char, std::map<std::string, Movie*>> moviesByGenre;
 };
 
 #endif

@@ -26,13 +26,13 @@ void BorrowCommand::execute(std::istringstream &ss,
   ss >> genre;
 
   if (media != 'D') {
-    std::cerr << "Unsupported media type: " << media << "\n";
+    std::cout << "Unsupported media type: " << media << "\n";
     return;
   }
 
   Customer *customer = customers[id];
   if (customer == nullptr) {
-    std::cerr << "Invalid customer ID: " << id << "\n";
+    std::cout << "Invalid customer ID: " << id << "\n";
     return;
   }
 
@@ -59,21 +59,25 @@ void BorrowCommand::execute(std::istringstream &ss,
     movieKey = std::to_string(month) + "|" + std::to_string(year) + "|" +
                first + " " + last;
   } else {
-    std::cerr << "Invalid movie type: " << genre << "\n";
+    std::cout << "Invalid movie type: " << genre << "\n";
     return;
   }
 
   Movie *movie = inventory.getMovie(movieKey);
   if (movie == nullptr || movie->getGenre() != genre) {
-    std::cerr << "Invalid movie or genre not found for key: " << movieKey
+    std::cout << "Invalid movie or genre not found for key: " << movieKey
               << "\n";
     return;
   }
 
   if (!movie->decreaseStock()) {
-    std::cerr << "Movie out of stock: " << movie->getTitle() << "\n";
+    std::cout << customer->getName() << " could NOT borrow "
+              << movie->getTitle() << ", out of stock:\n";
+    std::cout << "Failed to execute command: Borrow " << customer->getName()
+              << " " << movie->getTitle() << "\n";
     return;
   }
 
+  customer->addBorrowedMovie(movieKey);
   customer->addTransaction("Borrowed: " + movie->getTitle());
 }
