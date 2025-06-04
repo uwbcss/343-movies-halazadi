@@ -5,13 +5,13 @@
 
 class HistoryCommand : public Command {
 public:
-    HistoryCommand();
+    HistoryCommand(); // Constructor for HistoryCommand
     void execute(std::istringstream& ss,
                  std::unordered_map<int, Customer*>& customers,
-                 Inventory& inventory) override;
+                 Inventory& inventory) override; // Executes the history command
 
 private:
-    static bool registered;
+    static bool registered; // Registration flag for CommandFactory
 };
 
 #endif

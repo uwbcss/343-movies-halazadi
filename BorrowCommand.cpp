@@ -6,16 +6,19 @@
 #include "Utils.h"
 #include <iostream>
 
+// BorrowCommand Check
 bool BorrowCommand::registered = []() {
   CommandFactory::registerCommand('B', []() { return new BorrowCommand(); });
   return true;
 }();
 
-BorrowCommand::BorrowCommand() = default;
+BorrowCommand::BorrowCommand() = default; // BorrowCommand constructor
 
 void BorrowCommand::execute(std::istringstream &ss,
                             std::unordered_map<int, Customer *> &customers,
                             Inventory &inventory) {
+  // Executes the borrow logic for a customer and movie
+
   int id;
   ss >> id;
 

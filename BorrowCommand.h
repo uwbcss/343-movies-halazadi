@@ -5,10 +5,10 @@
 
 class BorrowCommand : public Command {
 public:
-    BorrowCommand();
+    BorrowCommand(); // Constructor for BorrowCommand
     void execute(std::istringstream& ss,
                  std::unordered_map<int, Customer*>& customers,
-                 Inventory& inventory) override;
+                 Inventory& inventory) override; // Executes the borrow command
 
 private:
     static bool registered;

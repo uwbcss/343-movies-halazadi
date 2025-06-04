@@ -4,13 +4,16 @@
 #include "Inventory.h"
 #include <iostream>
 
+// Registers the HistoryCommand with the CommandFactory
 bool HistoryCommand::registered = []() {
   CommandFactory::registerCommand('H', []() { return new HistoryCommand(); });
   return true;
 }();
 
+// Constructor for HistoryCommand
 HistoryCommand::HistoryCommand() {}
 
+// Executes the history command for a customer
 void HistoryCommand::execute(std::istringstream &ss,
                              std::unordered_map<int, Customer *> &customers,
                              Inventory &inventory) {

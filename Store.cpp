@@ -4,8 +4,10 @@
 #include <iostream>
 #include <sstream>
 
+// Constructor initializes inventory
 Store::Store() { inventory = new Inventory(); }
 
+// Destructor cleans up inventory and customer memory
 Store::~Store() {
   delete inventory;
   for (auto &pair : customers) {
@@ -13,6 +15,7 @@ Store::~Store() {
   }
 }
 
+// Loads customers from a file and stores them in the map
 void Store::loadCustomers(const std::string &filename) {
   std::ifstream file(filename);
   if (!file) {
@@ -28,10 +31,12 @@ void Store::loadCustomers(const std::string &filename) {
   }
 }
 
+// Loads movie inventory from a file
 void Store::loadInventory(const std::string &filename) {
   inventory->loadFromFile(filename);
 }
 
+// Processes commands from a file line by line
 void Store::processCommands(const std::string &filename) {
   std::ifstream file(filename);
   std::string line;
@@ -40,6 +45,7 @@ void Store::processCommands(const std::string &filename) {
   }
 }
 
+// Parses a command line and executes it
 void Store::processCommandLine(const std::string &line) {
   std::istringstream ss(line);
   char commandType;
@@ -54,6 +60,7 @@ void Store::processCommandLine(const std::string &line) {
   }
 }
 
+// Retrieves a customer by ID
 Customer *Store::getCustomer(int id) const {
   auto it = customers.find(id);
   return (it != customers.end()) ? it->second : nullptr;

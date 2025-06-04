@@ -5,13 +5,13 @@
 
 class Transaction {
 public:
-    Transaction(char type, const std::string& movieInfo);
+    Transaction(char type, const std::string& movieInfo); // Constructor
 
-    std::string toString() const;
+    std::string toString() const; // Returns a string description of the transaction
 
 private:
-    char actionType;  // 'B' or 'R'
-    std::string movieInfo;
+    char actionType;  // 'B' for borrow or 'R' for return
+    std::string movieInfo; // Description of the movie involved
 };
 
 #endif

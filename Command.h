@@ -10,10 +10,10 @@ class Inventory;
 
 class Command {
 public:
-    virtual ~Command() = default;
+    virtual ~Command() = default; // Virtual destructor for Command
     virtual void execute(std::istringstream& ss,
                          std::unordered_map<int, Customer*>& customers,
-                         Inventory& inventory) = 0;
+                         Inventory& inventory) = 0; // Executes the command
 };
 
 #endif

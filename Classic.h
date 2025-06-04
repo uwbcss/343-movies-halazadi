@@ -8,17 +8,13 @@
 class Classic : public Movie {
 public:
     Classic(int stock, const std::string &director, const std::string &title,
-            const std::string &majorActor, int month, int year);
+            const std::string &majorActor, int month, int year); // Classic constructor
 
-    std::string getKey() const override;
-    void printInfo() const override;
+    std::string getKey() const override; // Gets the unique key for this movie
+    void printInfo() const override; // Prints info about the classic movie
 
-    // Do NOT use override — this method does not exist in base class
-   // static void printInventory(const Inventory &inventory);
-
-
-    int getMonth() const;
-    std::string getMajorActor() const;
+    int getMonth() const; // Gets the release month
+    std::string getMajorActor() const; // Gets the major actor
 
 private:
     std::string majorActor;

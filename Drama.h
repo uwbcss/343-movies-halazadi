@@ -8,12 +8,11 @@ class Inventory; // Forward declaration
 
 class Drama : public Movie {
 public:
-    Drama(int stock, const std::string &director, const std::string &title, int year);
-    std::string getKey() const override;
-    void printInfo() const override;
+    Drama(int stock, const std::string &director, const std::string &title, int year); // Drama constructor
+    std::string getKey() const override; // Gets the unique key for this movie
+    void printInfo() const override; // Prints info about the drama movie
 
-    // Static so it doesn't require a specific Drama instance
-    static void printInventory(const Inventory &inventory);
+    static void printInventory(const Inventory &inventory); // Prints all drama movies in inventory
 };
 
 #endif // DRAMA_H

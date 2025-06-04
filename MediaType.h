@@ -5,9 +5,9 @@
 
 class MediaType {
 public:
-    explicit MediaType(char code);  // Marked explicit to avoid implicit conversion
-    char getCode() const;
-    std::string getName() const;
+    explicit MediaType(char code);  // Constructor for MediaType, marked explicit to avoid implicit conversion
+    char getCode() const; // Returns the media type code
+    std::string getName() const; // Returns the name of the media type
 
 private:
     char code; // e.g. 'D' for DVD

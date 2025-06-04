@@ -7,11 +7,11 @@
 
 class CommandFactory {
 public:
-    static Command* create(char code);
-    static void registerCommand(char code, std::function<Command*()> ctor);
+    static Command* create(char code); // Creates a command object based on code
+    static void registerCommand(char code, std::function<Command*()> ctor); // Registers a command with code
 
 private:
-    static std::unordered_map<char, std::function<Command*()>>& getRegistry();
+    static std::unordered_map<char, std::function<Command*()>>& getRegistry(); // Gets the command registry
 };
 
 #endif

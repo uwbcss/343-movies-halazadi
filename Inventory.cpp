@@ -9,8 +9,10 @@
 #include <sstream>
 #include <vector>
 
+// Constructor for Inventory
 Inventory::Inventory() {}
 
+// Destructor for Inventory
 Inventory::~Inventory() {
   for (auto &genrePair : moviesByGenre) {
     for (auto &moviePair : genrePair.second) {
@@ -19,6 +21,7 @@ Inventory::~Inventory() {
   }
 }
 
+// Loads movies from a file into the inventory
 void Inventory::loadFromFile(const std::string &filename) {
   std::ifstream file(filename);
   std::string line;
@@ -36,6 +39,7 @@ void Inventory::loadFromFile(const std::string &filename) {
   }
 }
 
+// Prints all movies in the inventory
 void Inventory::printInventory() const {
   for (const char genre : {'F', 'D', 'C'}) {
     auto it = moviesByGenre.find(genre);
@@ -83,6 +87,7 @@ void Inventory::printInventory() const {
   }
 }
 
+// Returns a pointer to a movie with the given key
 Movie *Inventory::getMovie(const std::string &key) const {
   for (const auto &genrePair : moviesByGenre) {
     for (const auto &moviePair : genrePair.second) {
@@ -94,10 +99,12 @@ Movie *Inventory::getMovie(const std::string &key) const {
   return nullptr;
 }
 
+// Adds a movie to the inventory
 void Inventory::addMovie(Movie *movie) {
   moviesByGenre[movie->getGenre()][movie->getKey()] = movie;
 }
 
+// Gets all movies of a specific genre
 std::vector<Movie *> Inventory::getAllMoviesOfGenre(char genre) const {
   std::vector<Movie *> result;
   auto it = moviesByGenre.find(genre);

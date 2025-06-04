@@ -7,6 +7,7 @@
 #include <iostream>
 #include <sstream>
 
+// Creates a Movie object from a line of text, based on movie type
 Movie *MovieFactory::createMovie(const std::string &line) {
   if (line.empty() || trim(line).empty()) {
     return nullptr;

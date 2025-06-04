@@ -1,16 +1,18 @@
-/**
- * Driver for starting movie store tests
- */
-
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-// forward declaration, implementation in store_test.cpp
-void testAll();
+// Update to match new version
+void testAll(const string &moviesFile = "data4movies.txt",
+             const string &commandsFile = "data4commands.txt");
 
-int main() {
-  testAll();
-  cout << "Done." << endl;
+int main(int argc, char *argv[]) {
+  if (argc == 3) {
+    testAll(argv[1], argv[2]); // Use provided files
+  } else {
+    testAll(); // Use defaults
+  }
+
+  cout << "Done!" << endl;
   return 0;
 }

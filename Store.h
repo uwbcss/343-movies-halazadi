@@ -10,19 +10,19 @@
 
 class Store {
 public:
-    Store();
-    ~Store();
+    Store(); // Constructor
+    ~Store(); // Destructor
 
-    void loadCustomers(const std::string& filename);
-    void loadInventory(const std::string& filename);
-    void processCommands(const std::string& filename);
+    void loadCustomers(const std::string& filename); // Loads customer data from file
+    void loadInventory(const std::string& filename); // Loads movie data from file
+    void processCommands(const std::string& filename); // Executes all commands from file
 
 private:
-    std::unordered_map<int, Customer*> customers;
-    Inventory* inventory;
+    std::unordered_map<int, Customer*> customers; // Customer list
+    Inventory* inventory; // Pointer to inventory system
 
-    void processCommandLine(const std::string& line);
-    Customer* getCustomer(int id) const;
+    void processCommandLine(const std::string& line); // Parses and executes a single command
+    Customer* getCustomer(int id) const; // Returns customer object by ID
 };
 
 #endif

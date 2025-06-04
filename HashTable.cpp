@@ -6,19 +6,21 @@
 template <typename KeyType, typename ValueType>
 HashTable<KeyType, ValueType>::HashTable(int size) : capacity(size) {
   table.resize(capacity);
-}
+} // HashTable constructor
 
 template <typename KeyType, typename ValueType>
-HashTable<KeyType, ValueType>::~HashTable() {}
+HashTable<KeyType, ValueType>::~HashTable() {} // HashTable destructor
 
 template <typename KeyType, typename ValueType>
 int HashTable<KeyType, ValueType>::hashFunction(const KeyType &key) const {
+  // Computes the hash value for a key
   return key % capacity; // assumes KeyType is int (e.g., customer ID)
 }
 
 template <typename KeyType, typename ValueType>
 void HashTable<KeyType, ValueType>::insert(const KeyType &key,
                                            const ValueType &value) {
+  // Inserts a key-value pair into the hash table
   int idx = hashFunction(key);
   for (auto &pair : table[idx]) {
     if (pair.first == key) {
@@ -31,6 +33,7 @@ void HashTable<KeyType, ValueType>::insert(const KeyType &key,
 
 template <typename KeyType, typename ValueType>
 ValueType HashTable<KeyType, ValueType>::get(const KeyType &key) const {
+  // Gets the value for a given key
   int idx = hashFunction(key);
   for (const auto &pair : table[idx]) {
     if (pair.first == key) {
@@ -42,6 +45,7 @@ ValueType HashTable<KeyType, ValueType>::get(const KeyType &key) const {
 
 template <typename KeyType, typename ValueType>
 bool HashTable<KeyType, ValueType>::contains(const KeyType &key) const {
+  // Checks if the hash table contains the key
   int idx = hashFunction(key);
   for (const auto &pair : table[idx]) {
     if (pair.first == key) {

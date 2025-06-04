@@ -46,9 +46,11 @@ void testStoreFinal() {
   cout << "=====================================" << endl;
 }
 
-void testAll() {
+// Modified testAll to accept optional filenames
+void testAll(const string &moviesFile = "data4movies.txt",
+             const string &commandsFile = "data4commands.txt") {
   Store store;
   store.loadCustomers("data4customers.txt");
-  store.loadInventory("data4movies.txt");
-  store.processCommands("data4commands.txt");
+  store.loadInventory(moviesFile);
+  store.processCommands(commandsFile);
 }

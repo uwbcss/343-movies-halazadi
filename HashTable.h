@@ -8,15 +8,15 @@
 template <typename KeyType, typename ValueType>
 class HashTable {
 public:
-    explicit HashTable(int size = 1000);  // Fix: mark single-arg constructor explicit
-    ~HashTable();
+    explicit HashTable(int size = 1000);  // HashTable constructor
+    ~HashTable(); // HashTable destructor
 
-    void insert(const KeyType& key, const ValueType& value);
-    ValueType get(const KeyType& key) const;
-    bool contains(const KeyType& key) const;
+    void insert(const KeyType& key, const ValueType& value); // Inserts a key-value pair
+    ValueType get(const KeyType& key) const; // Retrieves the value for a key
+    bool contains(const KeyType& key) const; // Checks if the key exists
 
 private:
-    int hashFunction(const KeyType& key) const;
+    int hashFunction(const KeyType& key) const; // Computes the hash for a key
     std::vector<std::list<std::pair<KeyType, ValueType>>> table;
     int capacity;
 };

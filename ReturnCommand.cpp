@@ -6,13 +6,16 @@
 #include "Utils.h"
 #include <iostream>
 
+// Registers the ReturnCommand with the CommandFactory
 bool ReturnCommand::registered = []() {
   CommandFactory::registerCommand('R', []() { return new ReturnCommand(); });
   return true;
 }();
 
+// Constructor for ReturnCommand
 ReturnCommand::ReturnCommand() {}
 
+// Executes the return command for a customer returning a movie
 void ReturnCommand::execute(std::istringstream &ss,
                             std::unordered_map<int, Customer *> &customers,
                             Inventory &inventory) {
